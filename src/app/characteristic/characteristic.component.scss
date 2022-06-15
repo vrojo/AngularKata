@@ -1,0 +1,15 @@
+.characteristic-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+
+  .name {
+    background: #e8e8e8;
+    border-radius: 4px 4px 0 0;
+    min-width: 60px;
+    margin-right: auto;
+  }
+  .value {
+    margin: auto;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="movie-card-container">
+  <div class="information-container">
+    <h2>{{ movie.primaryTitle }}<img class="edit-icon" [src]="editIcon"></h2>
+    <i>Original title: {{ movie.originalTitle }}</i>
+    <div class="movie-characteristics">
+      <app-characteristic [characteristicName]="'ID'" [characteristicValue]="movie.id"></app-characteristic>
+      <app-characteristic [characteristicName]="'Minutes'" [characteristicValue]="movie.runtimeMinutes"></app-characteristic>
+      <app-characteristic [characteristicName]="'Start year'" [characteristicValue]="movie.startYear"></app-characteristic>
+      <app-characteristic [characteristicName]="'End year'" [characteristicValue]="showEndYear()"></app-characteristic>
+      <app-characteristic [characteristicName]="'Is adult'" [characteristicValue]="isAdultMovie()"></app-characteristic>
+      <app-characteristic [characteristicName]="'Genre'" [characteristicValue]="movie.genre"></app-characteristic>
+    </div>
+  </div>
+  <div class="img-container">
+    <img class="picture" [src]="moviePicture"  alt="movie-picture">
+  </div>
+</div>

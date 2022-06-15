@@ -1,0 +1,45 @@
+.movie-card-container {
+  display: flex;
+  height: 200px;
+  width: 600px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0 0 0 10px;
+  box-shadow: lightgray 4px 4px 20px;
+
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      display: flex;
+      width: 100%;
+      margin-bottom: 2px;
+
+      .edit-icon {
+        margin: -15px 2px auto auto;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    i {
+      color: #606060;
+    }
+  }
+
+  .img-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+
+    .picture {
+      height: 60%;
+    }
+  }
+
+  .movie-characteristics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
